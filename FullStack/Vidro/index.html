@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidro e Vidro - Soluções em Vidros Temperados</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Vidro e Vidro</h1>
+      <p>Soluções completas em vidros temperados e esquadrias de alumínio</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre Nós</a></li>
+      <li><a href="#orcamento">Orçamento</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <div id="userButtons">
+      <div id="areaLogin">
+        <button onclick="window.location.href='login.html'">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+
+      <div id="areaAdmin" style="display: none;">
+        <button id="btnAdmin" onclick="window.location.href='adm.html'">
+          <i class="fa-regular fa-file-lines"></i>
+        </button>
+      </div>
+
+      <div id="areaLogout" style="display: none;">
+        <button id="btnLogout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Conteúdo dos serviços, sobre, orçamento e contato -->
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="servicos-boxes">
+        <div class="box-servico">
+          <i class="fas fa-building"></i>
+          <h3>Fechamento de Ambientes</h3>
+          <p>Fechamento de sacadas, varandas e boxes de banheiro com vidro temperado sob medida.</p>
+        </div>
+        <div class="box-servico">
+          <i class="fas fa-window-maximize"></i>
+          <h3>Esquadrias de Alumínio</h3>
+          <p>Fabricação e instalação de esquadrias de alumínio personalizadas para portas, janelas e fachadas.</p>
+        </div>
+        <div class="box-servico">
+          <i class="fa-solid fa-circle"></i>
+          <h3>Espelhos Decorativos</h3>
+          <p>Espelhos decorativos e funcionais sob medida para diversos ambientes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Na Vidro e Vidro, somos especialistas em soluções completas com vidro temperado, vidro comum e esquadrias de
+        alumínio. Oferecemos atendimento personalizado e materiais de alta qualidade.</p>
+    </section>
+
+    <section id="orcamento">
+      <h2>Solicite um Orçamento</h2>
+      <form id="orcamentoForm">
+        <input type="text" id="nome" placeholder="Nome completo" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="tel" id="telefone" placeholder="Telefone ou WhatsApp" required>
+        <textarea id="descricao" rows="5" placeholder="Descreva o serviço desejado" required></textarea>
+        <button type="submit">Enviar Solicitação</button>
+      </form>
+
+    </section>
+
+    <section id="socios">
+      <h2>Sócios</h2>
+      <div class="foto">
+        <img src="imagens/Foto.jpg" alt="selfie" style="width:150px;height:150px">
+      </div>
+    </section>
+
+
+      <section id="equipe">
+
+    <h2>Feito por </h2>
+
+        <div class="footer-content">
+        <div class="footer-section">
+          <p><i class="fas fa-user"></i>João Gimenez</p>
+          <p><i class="fas fa-user"></i>Lucas Oliveira</p>
+        </div>
+
+  </section>
+
+
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+          <p><i class="fas fa-envelope"></i> contato@vidroevidro.com.br</p>
+        </div>
+        <div class="footer-section">
+          <h3>Horário de Atendimento</h3>
+          <p>Segunda a Sexta: 8h às 18h</p>
+          <p>Sábado: 8h às 12h</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="copyright">
+      <p>&copy; 2023 Vidro e Vidro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/orcamento.js"></script>
+
+</body>
+</html>
